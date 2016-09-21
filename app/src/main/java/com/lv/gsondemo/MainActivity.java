@@ -31,11 +31,13 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         DLog.init("lv", true);
+
     }
 
     public void testSerializedName(View view) {
@@ -140,7 +142,6 @@ public class MainActivity extends AppCompatActivity {
         Gson g2 = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
         DLog.d(g2.toJson(new ExposeModel1()));
     }
-
 
 
     /**

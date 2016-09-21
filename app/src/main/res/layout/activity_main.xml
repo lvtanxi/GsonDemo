@@ -61,5 +61,8 @@
             style="@style/btn"
             android:onClick="testJsonSerializer"
             android:text="JsonSerializer"/>
+        <com.lv.gsondemo.view.Win8Search
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
     </LinearLayout>
 </ScrollView>
